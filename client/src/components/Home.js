@@ -12,8 +12,8 @@ const Home = () => {
   }
 
   return (
-    <form className='home_container' onSubmit={handleSubmit}>
-      <h2 className='home_header'>Sign in to chat</h2>
+    <form className='home__container' onSubmit={handleSubmit}>
+      <h2 className='home__header'>Sign in to chat</h2>
       <label htmlFor='username'>Username</label>
       <input
         type='text'
@@ -23,7 +23,7 @@ const Home = () => {
         className='username_input'
         value={userName}
         onChange={(e) => setUserName(e.target.value)}/>
-        <button className='home_cta'>Sign in</button>
+        <button className='home__cta'>Sign in</button>
     </form>
   );
 };
