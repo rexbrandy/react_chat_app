@@ -13,3 +13,5 @@ const ChatBar = () => {
     </div>
   )
 }
+
+export default ChatBar;
