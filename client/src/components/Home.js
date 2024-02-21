@@ -10,6 +10,7 @@ const Home = ({ socket }) => {
     localStorage.setItem('userName', userName);
     // Sends username and id to server
     socket.emit('newUser', { userName, socketID: socket.id});
+    console.log('Stuff', userName, socket.id);
     navigate('/chat');
   }
 
